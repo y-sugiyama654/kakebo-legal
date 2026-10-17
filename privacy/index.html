@@ -3,23 +3,78 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>プライバシーポリシー | kakebo</title>
+<title>kakebo プライバシーポリシー</title>
 <style>
-  :root { --ink:#3A352D; --ink2:#6B6359; --bg:#FBF1DD; --accent:#E0913A; }
-  @media (prefers-color-scheme: dark) { :root { --ink:#F2EDE4; --ink2:#B9B0A4; --bg:#1E1B17; --accent:#EDA85A; } }
-  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif; line-height:1.8; }
+  :root { --ink:#3A352D; --ink2:#6B6359; --bg:#FBF1DD; --accent:#E0913A; --line:rgba(58,53,45,.18); }
+  @media (prefers-color-scheme: dark) { :root { --ink:#F2EDE4; --ink2:#B9B0A4; --bg:#1E1B17; --accent:#EDA85A; --line:rgba(242,237,228,.22); } }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif; line-height:1.85; }
   main { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
-  h1 { font-size:1.6rem; margin:0 0 4px; }
-  .meta { color:var(--ink2); font-size:.9rem; margin-bottom:28px; }
+  h1 { font-size:1.6rem; margin:0 0 20px; }
+  h2 { font-size:1.15rem; margin:32px 0 8px; }
+  p, li { margin:8px 0; }
   a { color:var(--accent); }
+  table { width:100%; border-collapse:collapse; font-size:.92rem; margin:12px 0; }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:rgba(224,145,58,.12); }
   nav { margin-top:40px; font-size:.9rem; }
 </style>
 </head>
 <body>
 <main>
-<h1>プライバシーポリシー</h1>
-<p class="meta">最終更新日: 2026年10月17日（準備中）</p>
-<p>ここに本文が入ります。（準備中・仮の文言です）</p>
+<h1>kakebo プライバシーポリシー</h1>
+<p>kakebo運営事務局(以下「運営者」といいます)は、共有型家計簿アプリ「kakebo」(以下「本サービス」といいます)で取り扱う利用者の情報の扱いを、以下のとおり定めます。</p>
+<h2>1. 収集する情報</h2>
+<p>本サービスは、次の情報を収集します。</p>
+<ol>
+  <li>アカウント情報: GoogleまたはAppleのログインを通じて取得する識別子(FirebaseのユーザーID)、メールアドレス(Appleの「メールを非公開」の代替アドレスを含む)、氏名・表示名</li>
+  <li>グループ情報: グループ名、グループコード、グループ内でのメンバー名</li>
+  <li>家計データ: 利用者が入力する支出の金額、支払日、支払先、メモ、カテゴリ、支払方法</li>
+  <li>問い合わせ内容: 問い合わせ時に連絡いただいた情報</li>
+</ol>
+<p>クレジットカード番号や銀行口座番号は収集しません。銀行口座やカードとの連携もしていません。</p>
+<h2>2. 利用目的</h2>
+<p>収集した情報は、次の目的に限って利用します。</p>
+<ul>
+  <li>本サービスの提供・運営(ログイン、グループでの家計データの共有、集計とグラフ表示)</li>
+  <li>ユーザーサポートと問い合わせへの対応</li>
+  <li>不正利用の防止とセキュリティの確保</li>
+  <li>本サービスの改善、新機能の検討(統計的に処理し、個人を特定しない形で利用します)</li>
+  <li>重要なお知らせの連絡</li>
+</ul>
+<p>広告の配信や、家計データを販売・マーケティング目的に利用することはありません。</p>
+<h2>3. グループ内での共有</h2>
+<p>本サービスは、同じグループに参加しているメンバー同士で家計データを共有することを目的としています。グループに登録された支出・メンバー名・カテゴリなどは、そのグループの全メンバーに表示されます。グループコードは参加する相手にだけ伝えてください。コードを知った第三者がグループに参加すると、データを閲覧できるおそれがあります。</p>
+<h2>4. 第三者への提供</h2>
+<p>運営者は、次の場合を除き、利用者の同意なく個人情報を第三者に提供しません。</p>
+<ul>
+  <li>法令に基づく場合</li>
+  <li>人の生命、身体または財産の保護に必要で、本人の同意を得ることが困難な場合</li>
+</ul>
+<h2>5. 委託先・外部サービス</h2>
+<p>本サービスは、運営のために次の外部サービスを利用しています。これらのサービスによって、情報が日本国外のサーバーで処理・保存される場合があります。</p>
+<table>
+  <thead><tr><th>サービス</th><th>提供者</th><th>用途</th></tr></thead>
+  <tbody>
+    <tr><td>Firebase Authentication / Googleログイン</td><td>Google LLC</td><td>ログインの認証</td></tr>
+    <tr><td>Sign in with Apple</td><td>Apple Inc.</td><td>ログインの認証</td></tr>
+    <tr><td>Amazon Web Services</td><td>Amazon Web Services, Inc.</td><td>APIサーバーとデータベースの運用、認証情報の管理</td></tr>
+    <tr><td>Apple App Store / TestFlight</td><td>Apple Inc.</td><td>アプリの配信</td></tr>
+    <tr><td>GitHub Pages</td><td>GitHub, Inc.</td><td>利用規約・プライバシーポリシーなどのサイトの配信</td></tr>
+  </tbody>
+</table>
+<h2>6. 安全管理</h2>
+<p>運営者は、収集した情報を漏えい・滅失・毀損させないよう、通信の暗号化(HTTPS)、アクセス制限、認証情報の安全な管理など、合理的な安全管理措置を講じます。ただし、いかなるシステムも完全な安全性を保証するものではありません。</p>
+<h2>7. 保存期間とデータの削除</h2>
+<p>利用者の情報は、アカウントを利用している間保存します。利用者は、アプリ内の設定画面からいつでもアカウントを削除できます。削除を実行すると、メールアドレスやユーザーIDなどのアカウント情報を削除します。グループに登録した支出データの扱い: 他のメンバーが残っているグループでは、支出データは残し、あなたのメンバー名を「退会したメンバー」に置き換えます(あなたのアカウントとの紐づけは削除されます)。あなたが最後のメンバーだったグループは、支出・カテゴリ・支払方法などグループのすべてのデータを削除します。バックアップに残るデータは、最大14日以内に消去されます。</p>
+<h2>8. 開示・訂正・削除の請求</h2>
+<p>利用者は、ご自身の情報について、開示・訂正・削除・利用停止を請求できます。下記の問い合わせ先にご連絡ください。ご本人であることを確認したうえで、合理的な期間内に対応します。</p>
+<h2>9. 未成年者の利用</h2>
+<p>未成年者が利用する場合は、保護者の同意を得たうえでご利用ください。</p>
+<h2>10. 本ポリシーの改定</h2>
+<p>必要に応じて本ポリシーを改定します。重要な変更は、アプリ内またはサイトでお知らせします。改定後に本サービスを利用した場合、改定後のポリシーに同意したものとみなします。</p>
+<h2>11. 問い合わせ</h2>
+<p>本ポリシーに関する問い合わせは、<a href="mailto:kakebo.cs@gmail.com">kakebo.cs@gmail.com</a>へお願いします。</p>
+<p>制定日: 2026年10月1日</p>
 <nav><a href="../">kakebo トップ</a></nav>
 </main>
 </body>
